@@ -18,6 +18,6 @@ copy /A Misc\Script\Custom_Scripts Build\5Custom.temp
 
 copy /A Item Build\3Item.temp
 
-copy /A Build\ nIneTeen_Patch.sql
+copy /A Build nIneTeen_Patch.sql
 
 echo Done ...
