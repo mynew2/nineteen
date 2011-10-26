@@ -4,5 +4,5 @@ Thumbs.db
 
 #ignore nineteen files
 *.temp
+*.custom
 nIneTeen_Patch.sql
-Custom_Scripts*

@@ -18,3 +18,4 @@ nIneTeen Trinity Server. Thats all!
 2. Customize your Server (Scripts) --\
 If you want to use your own Scripts drop it
 in the Misc\Script\Custom_Scripts Folder and click MAKE.
+All Custom Scripts must have the type .custom.
