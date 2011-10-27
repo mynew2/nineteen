@@ -21,7 +21,6 @@ DELETE FROM creature_loot_template WHERE entry = 60000;
 DELETE FROM npc_vendor WHERE entry >= 45000;
 
 -- Quests
-
 DELETE FROM `quest_template` WHERE `entry` >= '30000';
 DELETE FROM `creature_questrelation` WHERE `quest` >= '30000';
 DELETE FROM `creature_involvedrelation` WHERE `quest` >= '30000';
