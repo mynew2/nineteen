@@ -11,5 +11,6 @@ VALUES (45008, 0, 0, 0, 0, 0, 28195, 0, 0, 0, 'Dungeon Informer', 'nIneTeen','Sp
 INSERT INTO `gossip_menu` VALUES (60000,20000);
 
 INSERT INTO `npc_text`(`ID`,`text0_0`) VALUES
-(20000,'-----Season I-----$BHello §N,$Bin Season I you can Join these Dungeons$BInstances:$B1.Black Ruins$B2.Land of Justice$B$BRaids:$B$B1.Black Caverns');
+(20000,'-----Season I-----$BHello $N,$Bin Season I you can join these Dungeons$B$BInstances:$B1.Black Ruins$B2.Land of Justice$BRaids:$B$B1.Black Caverns');
+ 
  

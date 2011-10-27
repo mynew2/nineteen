@@ -15,7 +15,7 @@ DELETE FROM `gossip_menu` WHERE `entry` >= 60000;
 DELETE FROM `npc_text` WHERE `ID` >= 20000;
 
 -- Deletes loot
-DELETE FROM creature_loot_template WHERE entry = 60000;
+DELETE FROM creature_loot_template WHERE entry >= 60000;
 
 -- Deletes vendor tables
 DELETE FROM npc_vendor WHERE entry >= 45000;
