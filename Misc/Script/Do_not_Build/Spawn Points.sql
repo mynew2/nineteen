@@ -32,3 +32,8 @@ VALUES (210886, 46002, 565, 1, 1, 0, 0, 239.823, 359.261, -4.63623, 2.97038, 300
 --	Teleporter
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`)
 VALUES (210632, 45001, 565, 1, 1, 0, 0, 72.7331, 44.4201, -4.75403, 2.84072, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+
+-- Twilight Halls
+--	Teleporter
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211227, 45001, 547, 1, 1, 0, 0, 124.464, -93.0467, -1.59055, 3.96365, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+
