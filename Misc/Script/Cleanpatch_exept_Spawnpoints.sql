@@ -24,3 +24,17 @@ DELETE FROM npc_vendor WHERE entry >= 45000;
 DELETE FROM `quest_template` WHERE `entry` >= '30000';
 DELETE FROM `creature_questrelation` WHERE `quest` >= '30000';
 DELETE FROM `creature_involvedrelation` WHERE `quest` >= '30000';
+
+-- Deletes Gruuls slaier spwan points
+DELETE FROM `creature` WHERE `id` = '19044';
+DELETE FROM `creature` WHERE `id` = '21350';
+DELETE FROM `creature` WHERE `id` = '19389';
+DELETE FROM `creature` WHERE `id` = '18831';
+DELETE FROM `creature` WHERE `id` = '18836';
+DELETE FROM `creature` WHERE `id` = '18835';
+DELETE FROM `creature` WHERE `id` = '20195';
+DELETE FROM `creature` WHERE `id` = '18832';
+DELETE FROM `creature` WHERE `id` = '18834';
+
+-- Deletes Gruuls slaier door
+DELETE FROM `gameobject` WHERE 'id' = '184468';
