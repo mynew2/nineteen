@@ -5,6 +5,9 @@
 --	https://github.com/Naios/nineteen	 --		
 --	------------------------------------ --
 
+-- Deletes spawn points
+DELETE FROM creature WHERE id >= 45000 and id <47000;
+
 -- Creature Spawn Points
 
 -- Player meeting Place
