@@ -37,4 +37,4 @@ DELETE FROM `creature` WHERE `id` = '18832';
 DELETE FROM `creature` WHERE `id` = '18834';
 
 -- Deletes Gruuls slaier door
-DELETE FROM `gameobject` WHERE 'id' = '184468';
+DELETE FROM gameobject WHERE guid =12443;
