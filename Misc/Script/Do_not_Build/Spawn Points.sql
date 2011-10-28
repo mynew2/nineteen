@@ -23,7 +23,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (210392, 45010, 1, 1, 1, 0, 1, -11345.6, -4756.39, 19.2221, 5.62814, 300, 0, 0, 449, 0, 0, 0, 0, 0);
 
 -- Gruls slyer
---	mMsterboss
+--	Msterboss
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (210886, 46002, 565, 1, 1, 0, 0, 239.823, 359.261, -4.63623, 2.97038, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
 
 --	Teleporter
