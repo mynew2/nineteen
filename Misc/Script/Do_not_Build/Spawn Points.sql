@@ -5,6 +5,9 @@
 --	https://github.com/Naios/nineteen	 --		
 --	------------------------------------ --
 
+-- Deletes spawn points
+DELETE FROM creature WHERE id >= 45000 and id <47000;
+
 -- Creature Spawn Points
 
 -- Player meeting Place
@@ -21,10 +24,11 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (209428, 45000, 1, 1, 1, 0, 1, -11520.6, -4723.93, 2.49169, 5.76522, 300, 0, 0, 449, 0, 0, 0, 0, 0);
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (210392, 45010, 1, 1, 1, 0, 1, -11345.6, -4756.39, 19.2221, 5.62814, 300, 0, 0, 449, 0, 0, 0, 0, 0);
 
--- Gruls slyer
---	mMsterboss
+-- Gruls lair
+--	Masterboss
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`)
 VALUES (210886, 46002, 565, 1, 1, 0, 0, 239.823, 359.261, -4.63623, 2.97038, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
 
 --	Teleporter
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (210632, 45001, 565, 1, 1, 0, 0, 72.7331, 44.4201, -4.75403, 2.84072, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`)
+VALUES (210632, 45001, 565, 1, 1, 0, 0, 72.7331, 44.4201, -4.75403, 2.84072, 300, 0, 0, 404, 2280, 0, 0, 0, 0);

@@ -21,5 +21,12 @@ in the Misc\Script\Custom_Scripts Folder and click MAKE.
 All Custom Scripts must have the type .custom.
 
 3. Credits
+Naios
+Genius
+
+
+------------------------------------
+If you want to Develop to become a 
+Contributer of this Project Mail me.
 
 
