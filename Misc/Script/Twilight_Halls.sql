@@ -10,7 +10,7 @@
 --	Deletion...
 DELETE FROM `creature` WHERE `map` = '547';
 
-DELETE FROM `creature` WHERE `guid` >= '211128' and 'guid' <= '211155';
+DELETE FROM `creature` WHERE guid >= 211128 and guid <= 211155;
 -- Spawn...
 --	Teleporter
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211155, 45001, 547, 1, 1, 0, 0, 124.464, -93.0467, -1.59055, 3.96365, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
