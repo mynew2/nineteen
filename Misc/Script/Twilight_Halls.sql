@@ -12,8 +12,10 @@ DELETE FROM `creature` WHERE `map` = '547';
 
 DELETE FROM `creature` WHERE guid >= 211128 and guid <= 211155;
 -- Spawn...
---	Teleporter
+--	1. Teleporter
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211155, 45001, 547, 1, 1, 0, 0, 124.464, -93.0467, -1.59055, 3.96365, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+-- 	2. Teleporter
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212487, 45001, 547, 1, 1, 0, 0, -135.106, -129.479, -1.77189, 5.13691, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
 
 --	First Hall Trash
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211128, 47000, 547, 1, 1, 0, 0, 17.8339, -68.6974, -1.59054, 5.54798, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
@@ -45,3 +47,7 @@ INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`
 
 --	So Tun
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211454, 46003, 547, 1, 1, 0, 0, -72.5793, -5.97924, -5.76414, 6.06162, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
+
+-- Closed Doors Npcs
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212758, 45011, 547, 1, 1, 0, 0, -167.236, -453.83, 3.03515, 6.03683, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212756, 45011, 547, 1, 1, 0, 0, -1.59217, -306.798, 3.03412, 2.96986, 300, 0, 0, 404, 2280, 0, 0, 0, 0);

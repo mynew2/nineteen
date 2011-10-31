@@ -10,6 +10,10 @@
 -- Deletes creatures
 DELETE FROM creature_template WHERE entry >= 45000;
 
+-- Deletes Objects...
+-- Deletion...
+DELETE FROM gameobject WHERE guid >= 160000;
+
 -- Deletes gossip menues
 DELETE FROM `gossip_menu` WHERE `entry` >= 60000;
 DELETE FROM `npc_text` WHERE `ID` >= 20000;
@@ -39,4 +43,5 @@ DELETE FROM `creature` WHERE `id` = '18834';
 -- Deletes Gruuls slaier door
 DELETE FROM gameobject WHERE guid =12443;
 
-
+-- Creature Equipment Template
+DELETE FROM creature_equip_template WHERE entry >= 5000;
