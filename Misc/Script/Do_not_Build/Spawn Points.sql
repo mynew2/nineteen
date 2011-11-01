@@ -6,7 +6,7 @@
 --	------------------------------------ --
 
 -- Deletes spawn points
-DELETE FROM creature WHERE id >= 45000 and id <47000;
+DELETE FROM creature WHERE id >= 45000 and id <48000;
 
 -- Creature Spawn Points
 

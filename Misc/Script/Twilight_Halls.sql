@@ -11,43 +11,58 @@
 DELETE FROM `creature` WHERE `map` = '547';
 
 DELETE FROM `creature` WHERE guid >= 211128 and guid <= 211155;
+
 -- Spawn...
 --	1. Teleporter
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211155, 45001, 547, 1, 1, 0, 0, 124.464, -93.0467, -1.59055, 3.96365, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+INSERT INTO `creature`(`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES
+(211155, 45001, 547, 1, 1, 0, 0, 124.464, -93.0467, -1.59055, 3.96365, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
+
 -- 	2. Teleporter
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212487, 45001, 547, 1, 1, 0, 0, -135.106, -129.479, -1.77189, 5.13691, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+(212487, 45001, 547, 1, 1, 0, 0, -135.106, -129.479, -1.77189, 5.13691, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
+
+-- 3. Teleporter 
+(213871, 45001, 547, 1, 1, 0, 0, -87.2413, -637.245, 21.7472, 2.68172, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
 
 --	First Hall Trash
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211128, 47000, 547, 1, 1, 0, 0, 17.8339, -68.6974, -1.59054, 5.54798, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211129, 47000, 547, 1, 1, 0, 0, 13.2278, -64.5785, -1.59054, 5.64615, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211130, 47000, 547, 1, 1, 0, 0, 9.44387, -68.4758, -1.59054, 5.65793, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211131, 47000, 547, 1, 1, 0, 0, 14.3805, -72.0394, -1.59054, 5.66578, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211132, 47001, 547, 1, 1, 0, 0, 13.6089, -68.5792, -1.59054, 5.64222, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211133, 47000, 547, 1, 1, 0, 0, 71.0825, -67.5632, -2.71623, 5.98074, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211134, 47000, 547, 1, 1, 0, 0, 65.2799, -65.7858, -2.87864, 6.00823, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211135, 47000, 547, 1, 1, 0, 0, 66.8411, -59.2012, -1.53046, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211136, 47000, 547, 1, 1, 0, 0, 71.9068, -61.8078, -1.57542, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211137, 47001, 547, 1, 1, 0, 0, 68.9835, -63.9091, -2.20744, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211138, 47000, 547, 1, 1, 0, 0, 35.7709, -33.5844, -1.06703, 5.21106, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211139, 47001, 547, 1, 1, 0, 0, 37.5308, -41.152, -1.11864, 5.71372, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211140, 47001, 547, 1, 1, 0, 0, 39.7209, -38.9653, -1.1821, 5.61947, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211141, 47000, 547, 1, 1, 0, 0, -22.69, -46.3117, -1.59099, 0.282693, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211142, 47001, 547, 1, 1, 0, 0, -3.69033, -24.2261, -1.8444, 5.99646, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211143, 47000, 547, 1, 1, 0, 0, -8.01815, -25.8644, -1.91687, 5.97682, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211144, 47000, 547, 1, 1, 0, 0, -2.44055, -27.6288, -1.80057, 5.97682, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211145, 47000, 547, 1, 1, 0, 0, -0.0808949, -22.8332, -1.77763, 5.94541, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211146, 47000, 547, 1, 1, 0, 0, -7.78829, -20.1261, -1.74058, 5.94541, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211147, 47001, 547, 1, 1, 0, 0, 79.8849, -105.891, -2.31607, 0.208857, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211148, 47000, 547, 1, 1, 0, 0, 77.055, -103.111, -2.71678, 0.0478649, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211149, 47000, 547, 1, 1, 0, 0, 76.789, -108.643, -2.05396, 0.134259, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211150, 47000, 547, 1, 1, 0, 0, 81.58, -107.78, -1.90135, 0.271708, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211151, 47000, 547, 1, 1, 0, 0, 80.6147, -102.736, -2.74282, 0.0439424, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211452, 47000, 547, 1, 1, 0, 0, -62.2197, -5.2091, -3.45128, 5.89983, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211453, 47000, 547, 1, 1, 0, 0, -65.2656, -12.7625, -3.74831, 5.93125, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
+(211128, 47000, 547, 1, 1, 0, 0, 17.8339, -68.6974, -1.59054, 5.54798, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211129, 47000, 547, 1, 1, 0, 0, 13.2278, -64.5785, -1.59054, 5.64615, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211130, 47000, 547, 1, 1, 0, 0, 9.44387, -68.4758, -1.59054, 5.65793, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211131, 47000, 547, 1, 1, 0, 0, 14.3805, -72.0394, -1.59054, 5.66578, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211132, 47001, 547, 1, 1, 0, 0, 13.6089, -68.5792, -1.59054, 5.64222, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211133, 47000, 547, 1, 1, 0, 0, 71.0825, -67.5632, -2.71623, 5.98074, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211134, 47000, 547, 1, 1, 0, 0, 65.2799, -65.7858, -2.87864, 6.00823, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211135, 47000, 547, 1, 1, 0, 0, 66.8411, -59.2012, -1.53046, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211136, 47000, 547, 1, 1, 0, 0, 71.9068, -61.8078, -1.57542, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211137, 47001, 547, 1, 1, 0, 0, 68.9835, -63.9091, -2.20744, 5.80795, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211138, 47000, 547, 1, 1, 0, 0, 35.7709, -33.5844, -1.06703, 5.21106, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211139, 47001, 547, 1, 1, 0, 0, 37.5308, -41.152, -1.11864, 5.71372, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211140, 47001, 547, 1, 1, 0, 0, 39.7209, -38.9653, -1.1821, 5.61947, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211141, 47000, 547, 1, 1, 0, 0, -22.69, -46.3117, -1.59099, 0.282693, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211142, 47001, 547, 1, 1, 0, 0, -3.69033, -24.2261, -1.8444, 5.99646, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211143, 47000, 547, 1, 1, 0, 0, -8.01815, -25.8644, -1.91687, 5.97682, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211144, 47000, 547, 1, 1, 0, 0, -2.44055, -27.6288, -1.80057, 5.97682, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211145, 47000, 547, 1, 1, 0, 0, -0.0808949, -22.8332, -1.77763, 5.94541, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211146, 47000, 547, 1, 1, 0, 0, -7.78829, -20.1261, -1.74058, 5.94541, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211147, 47001, 547, 1, 1, 0, 0, 79.8849, -105.891, -2.31607, 0.208857, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211148, 47000, 547, 1, 1, 0, 0, 77.055, -103.111, -2.71678, 0.0478649, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211149, 47000, 547, 1, 1, 0, 0, 76.789, -108.643, -2.05396, 0.134259, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211150, 47000, 547, 1, 1, 0, 0, 81.58, -107.78, -1.90135, 0.271708, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211151, 47000, 547, 1, 1, 0, 0, 80.6147, -102.736, -2.74282, 0.0439424, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211452, 47000, 547, 1, 1, 0, 0, -62.2197, -5.2091, -3.45128, 5.89983, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
+(211453, 47000, 547, 1, 1, 0, 0, -65.2656, -12.7625, -3.74831, 5.93125, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
 
 --	So Tun
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (211454, 46003, 547, 1, 1, 0, 0, -72.5793, -5.97924, -5.76414, 6.06162, 300, 0, 0, 61820, 0, 0, 0, 0, 0);
+(211454, 46003, 547, 1, 1, 0, 0, -72.5793, -5.97924, -5.76414, 6.06162, 300, 0, 0, 61820, 0, 0, 0, 0, 0),
 
 -- Closed Doors Npcs
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212758, 45011, 547, 1, 1, 0, 0, -167.236, -453.83, 3.03515, 6.03683, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
-INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`) VALUES (212756, 45011, 547, 1, 1, 0, 0, -1.59217, -306.798, 3.03412, 2.96986, 300, 0, 0, 404, 2280, 0, 0, 0, 0);
+(212758, 45011, 547, 1, 1, 0, 0, -167.236, -453.83, 3.03515, 6.03683, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
+(212756, 45011, 547, 1, 1, 0, 0, -1.59217, -306.798, 3.03412, 2.96986, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
+
+-- Magamar
+(213302, 46004, 547, 1, 1, 0, 5000, -83.7254, -341.337, -3.63574, 1.44901, 300, 0, 0, 17000, 27250, 0, 0, 0, 0),
+
+-- Theonar <Twilight Twins>
+(213590, 46005, 547, 1, 1, 0, 5000, -55.5488, -549.167, -1.59297, 2.15962, 300, 0, 0, 7599, 62675, 0, 0, 0, 0),
+
+-- Lyara
+(214145, 46007, 547, 1, 1, 0, 5000, -191.511, -781.43, 43.7995, 0.975824, 300, 0, 0, 21763, 138975, 0, 0, 0, 0);
