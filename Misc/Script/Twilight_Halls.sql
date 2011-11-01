@@ -7,6 +7,9 @@
 
 -- Twilight Hall
 
+-- Changes Access Requirement
+UPDATE `access_requirement` SET `level_min`=19 WHERE `mapId`=547 AND `difficulty`=0 LIMIT 1;
+
 --	Deletion...
 DELETE FROM `creature` WHERE `map` = '547';
 
@@ -20,7 +23,10 @@ INSERT INTO `creature`(`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`,
 -- 	2. Teleporter
 (212487, 45001, 547, 1, 1, 0, 0, -135.106, -129.479, -1.77189, 5.13691, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
 
--- 3. Teleporter 
+-- 	3. Teleporter
+(214428, 45001, 547, 1, 1, 0, 0, -13.1147, -456.946, 2.5424, 3.34318, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
+
+-- 	4. Teleporter 
 (213871, 45001, 547, 1, 1, 0, 0, -87.2413, -637.245, 21.7472, 2.68172, 300, 0, 0, 404, 2280, 0, 0, 0, 0),
 
 --	First Hall Trash
