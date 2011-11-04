@@ -20,7 +20,7 @@ All Credits for the Teleporter Script go to Rochet2
 */
 
 -- Deletion....
-DELETE FROM gossip_menu_option WHERE menu_id>'45001'-1 AND menu_id<'45001'+9;
+DELETE FROM gossip_menu_option WHERE menu_id>'45001'-1 AND menu_id<'45001'+12;
 DELETE FROM smart_scripts WHERE entryorguid = '45001';
 
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, box_coded, box_money, box_text) VALUES
@@ -44,11 +44,11 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 ('45001', 18, 9, 'BC Dungeons', 1, 1, '45001'+2, 0, 0, 0, NULL),
 ('45001', 19, 9, 'Wrath Dungeons', 1, 1, '45001'+3, 0, 0, 0, NULL),
 ('45001', 20, 9, 'Raid Teleports', 1, 1, '45001'+4, 0, 0, 0, NULL),
+
 */
-
-('45001', 20, 9, 'Raid Teleports [Easy]', 1, 1, '45001'+5, 0, 0, 0, NULL),
-('45001', 21, 9, 'Raid Teleports [Hard]', 1, 1, '45001'+6, 0, 0, 0, NULL),
-
+('45001', 21, 3, 'Raid Teleports [Easy]', 1, 1, '45001'+9, 0, 0, 0, NULL),
+('45001', 22, 3, 'Raid Teleports [Hard]', 1, 1, '45001'+10, 0, 0, 0, NULL),
+/*
 ('45001'+1, 0, 2, 'Gnomeregan', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Gnomeregan?'),
 ('45001'+1, 1, 2, 'The Deadmines', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to The Deadmines?'),
 ('45001'+1, 2, 2, 'The Stockade', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to The Stockade?'),
@@ -175,7 +175,13 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 ('45001'+8, 7, 2, 'Storm Peaks', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Storm Peaks?'),
 ('45001'+8, 8, 2, 'Icecrown', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Icecrown?'),
 ('45001'+8, 9, 2, 'Wintergrasp', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Wintergrasp?'),
-('45001'+8, 10, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL);
+('45001'+8, 10, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL),
+*/
+('45001'+9, 0, 9, 'Skys Upscent', 1, 1, 0, 0, 0, 0, NULL),
+('45001'+9, 1, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL),
+
+('45001'+10, 0, 2, 'Twilight Hall', 1, 1, 0, 0, 0, 0, NULL),
+('45001'+10, 1, 9, 'Back..', 1, 1, '45001', 0, 0, 0, NULL);
 
 INSERT INTO smart_scripts (entryorguid, source_type, id, link, event_type, event_phase_mask, event_chance, event_flags, event_param1, event_param2, event_param3, event_param4, action_type, action_param1, action_param2, action_param3, action_param4, action_param5, action_param6, target_type, target_param1, target_param2, target_param3, target_x, target_y, target_z, target_o, comment) VALUES 
 ('45001', 0, 1, 0, 62, 0, 100, 0, '45001', 1, 0, 0, 62, 1, 0, 0, 0, 0, 0, 0, 8, 0, 0, -11385.1, -4712.14, 6.66075, 4.63462, 'Teleporter script -> Mall'),
@@ -308,5 +314,11 @@ INSERT INTO smart_scripts (entryorguid, source_type, id, link, event_type, event
 ('45001', 0, 128, 0, 62, 0, 100, 0, '45001'+8, 6, 0, 0, 62, 571, 0, 0, 0, 0, 0, 0, 8, 0, 0, 5411.17, -966.37, 167.082, 1.57167, 'Teleporter script'),
 ('45001', 0, 129, 0, 62, 0, 100, 0, '45001'+8, 7, 0, 0, 62, 571, 0, 0, 0, 0, 0, 0, 8, 0, 0, 6120.46, -1013.89, 408.39, 5.12322, 'Teleporter script'),
 ('45001', 0, 130, 0, 62, 0, 100, 0, '45001'+8, 8, 0, 0, 62, 571, 0, 0, 0, 0, 0, 0, 8, 0, 0, 8323.28, 2763.5, 655.093, 2.87223, 'Teleporter script'),
-('45001', 0, 131, 0, 62, 0, 100, 0, '45001'+8, 9, 0, 0, 62, 571, 0, 0, 0, 0, 0, 0, 8, 0, 0, 4522.23, 2828.01, 389.975, 0.215009, 'Teleporter script');
+('45001', 0, 131, 0, 62, 0, 100, 0, '45001'+8, 9, 0, 0, 62, 571, 0, 0, 0, 0, 0, 0, 8, 0, 0, 4522.23, 2828.01, 389.975, 0.215009, 'Teleporter script'),
+
+-- Skys Upscent
+('45001', 0, 132, 0, 62, 0, 100, 0, '45001'+9, 0, 0, 0, 62, 600, 0, 0, 0, 0, 0, 0, 8, 0, 0, -462.373, -651.565, 28.55, 3.1004, 'Teleporter script -> Skys Upscent'),
+
+-- Twilight Halls
+('45001', 0, 133, 0, 62, 0, 100, 0, '45001'+10, 0, 0, 0, 62, 547, 0, 0, 0, 0, 0, 0, 8, 0, 0, 119.338, -104.815, -1.59054, 2.62243, 'Teleporter script -> Twilight Hall');
 
