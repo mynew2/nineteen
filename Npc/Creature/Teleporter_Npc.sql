@@ -24,8 +24,8 @@ DELETE FROM gossip_menu_option WHERE menu_id>'45001'-1 AND menu_id<'45001'+9;
 DELETE FROM smart_scripts WHERE entryorguid = '45001';
 
 INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id, npc_option_npcflag, action_menu_id, action_poi_id, box_coded, box_money, box_text) VALUES
-('45001', 1, 2, 'Stormwind', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Stormwind?'),
-('45001', 2, 2, 'Orgrimmar', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Orgrimmar?'),
+('45001', 1, 2, 'Mall', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to the Mall?'),
+/*('45001', 2, 2, 'Orgrimmar', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Orgrimmar?'),
 ('45001', 3, 2, 'Darnassus', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Darnassus?'),
 ('45001', 4, 2, 'Ironforge', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Ironforge?'),
 ('45001', 5, 2, 'Exodar', 1, 1, '45001', 0, 0, 0, 'Are you sure, that you want to go to Exodar?'),
@@ -44,6 +44,11 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 ('45001', 18, 9, 'BC Dungeons', 1, 1, '45001'+2, 0, 0, 0, NULL),
 ('45001', 19, 9, 'Wrath Dungeons', 1, 1, '45001'+3, 0, 0, 0, NULL),
 ('45001', 20, 9, 'Raid Teleports', 1, 1, '45001'+4, 0, 0, 0, NULL),
+*/
+
+('45001', 20, 9, 'Raid Teleports [Easy]', 1, 1, '45001'+5, 0, 0, 0, NULL),
+('45001', 21, 9, 'Raid Teleports [Hard]', 1, 1, '45001'+6, 0, 0, 0, NULL),
+
 ('45001'+1, 0, 2, 'Gnomeregan', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Gnomeregan?'),
 ('45001'+1, 1, 2, 'The Deadmines', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to The Deadmines?'),
 ('45001'+1, 2, 2, 'The Stockade', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to The Stockade?'),
@@ -172,9 +177,8 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 ('45001'+8, 9, 2, 'Wintergrasp', 1, 1, 0, 0, 0, 0, 'Are you sure, that you want to go to Wintergrasp?'),
 ('45001'+8, 10, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL);
 
-
 INSERT INTO smart_scripts (entryorguid, source_type, id, link, event_type, event_phase_mask, event_chance, event_flags, event_param1, event_param2, event_param3, event_param4, action_type, action_param1, action_param2, action_param3, action_param4, action_param5, action_param6, target_type, target_param1, target_param2, target_param3, target_x, target_y, target_z, target_o, comment) VALUES 
-('45001', 0, 1, 0, 62, 0, 100, 0, '45001', 1, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, -8842.09, 626.358, 94.0867, 3.61363, 'Teleporter script'),
+('45001', 0, 1, 0, 62, 0, 100, 0, '45001', 1, 0, 0, 62, 1, 0, 0, 0, 0, 0, 0, 8, 0, 0, -11385.1, -4712.14, 6.66075, 4.63462, 'Teleporter script -> Mall'),
 ('45001', 0, 2, 0, 62, 0, 100, 0, '45001', 2, 0, 0, 62, 1, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1601.08, -4378.69, 9.9846, 2.14362, 'Teleporter script'),
 ('45001', 0, 3, 0, 62, 0, 100, 0, '45001', 11, 0, 0, 62, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, -14281.9, 552.564, 8.90422, 0.860144, 'Teleporter script'),
 ('45001', 0, 4, 0, 62, 0, 100, 0, '45001', 10, 0, 0, 62, 530, 0, 0, 0, 0, 0, 0, 8, 0, 0, -1887.62, 5359.09, -12.4279, 4.40435, 'Teleporter script'),

@@ -23,5 +23,8 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 DELETE FROM game_tele WHERE name = 'd2';
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1428, -462.373, -651.565, 28.55, 3.1004, 600, 'd2');
 
+-- Start Location (Mall Tele)
+DELETE FROM game_tele WHERE name = 'start';
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1429, -11385.1, -4712.14, 6.66075, 4.63462, 1, 'start');
 
 
