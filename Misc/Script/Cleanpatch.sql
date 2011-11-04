@@ -32,3 +32,6 @@ DELETE FROM `creature_involvedrelation` WHERE `quest` >= @QUEST_START;
 
 -- Creature Equipment Template
 DELETE FROM creature_equip_template WHERE entry >= @CREATURE_EQUIPMENT_START;
+
+-- Spawn Points...
+DELETE FROM creature WHERE id >= @NPC_START;
