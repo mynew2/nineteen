@@ -20,3 +20,7 @@ VALUES (@OBJ_GUID_START+2, 180039, 1, 1, 1, -11440.9, -4673.27, 6.37158, 2.13956
 -- Gem Vendor Tent
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`)
 VALUES (@OBJ_GUID_START+3, 180042, 1, 1, 1, -11404.6, -4736.45, 6.15236, 1.2979, 0, 0, 0.604351, 0.796718, 300, 0, 1);
+
+-- Mailbox
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`)
+VALUES (@OBJ_GUID_START+4, 191952, 1, 1, 1, -11397.1, -4744.91, 6.03392, 0.585124, 0, 0, 0.288406, 0.957508, 300, 0, 1);

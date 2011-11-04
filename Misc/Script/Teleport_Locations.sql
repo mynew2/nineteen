@@ -19,5 +19,9 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 DELETE FROM game_tele WHERE name = 'd1';
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1427, 119.338, -104.815, -1.59054, 2.62243, 547, 'd1');
 
+-- Dungeon Skys Upscent
+DELETE FROM game_tele WHERE name = 'd2';
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1428, -462.373, -651.565, 28.55, 3.1004, 600, 'd2');
+
 
 
