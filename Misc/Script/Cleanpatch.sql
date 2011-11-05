@@ -35,3 +35,6 @@ DELETE FROM creature_equip_template WHERE entry >= @CREATURE_EQUIPMENT_START;
 
 -- Spawn Points...
 DELETE FROM creature WHERE id >= @NPC_START;
+
+-- Creature Template Addon
+DELETE FROM creature_template_addon WHERE entry >= @NPC_START;
