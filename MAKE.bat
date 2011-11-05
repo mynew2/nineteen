@@ -12,6 +12,7 @@ copy /A Misc\Gameobject Build\2Misc-GOB.temp
 copy /A Npc\Creature Build\4Npc-C.temp
 copy /A Npc\Vendor Build\4Npc-V.temp
 copy /A Npc\Quest Build\4Npc-Q.temp
+copy /A Npc\SAI_Scripts Build\4Npc-SAI.temp
 copy /A Npc\Loot Build\4Npc-L.temp
 
 copy /A Misc\Script\Custom_Scripts Build\5Custom.temp
