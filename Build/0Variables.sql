@@ -42,6 +42,9 @@ SET @QUEST_START = 30000;
 -- Custom GOB
 SET @CUSTOM_GOB_START = 500000;
 
+-- Custom Items
+SET @CUSTOM_ITEMS_START = 60000;
+
 -- Creature equipment template
 SET @CREATURE_EQUIPMENT_START = 5000;
 

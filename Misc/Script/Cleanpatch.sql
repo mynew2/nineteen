@@ -38,3 +38,5 @@ DELETE FROM creature WHERE id >= @NPC_START;
 
 -- Creature Template Addon
 DELETE FROM creature_template_addon WHERE entry >= @NPC_START;
+
+DELETE FROM item_template WHERE entry >= 60000;
