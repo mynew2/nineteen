@@ -322,3 +322,8 @@ INSERT INTO smart_scripts (entryorguid, source_type, id, link, event_type, event
 -- Twilight Halls
 ('45001', 0, 133, 0, 62, 0, 100, 0, '45001'+10, 0, 0, 0, 62, 547, 0, 0, 0, 0, 0, 0, 8, 0, 0, 119.338, -104.815, -1.59054, 2.62243, 'Teleporter script -> Twilight Hall');
 
+-- Creature Addon...
+INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`)
+VALUES (45001, 0, 0, 0, 0, 0, 62579);
+
+

@@ -122,4 +122,13 @@ INSERT INTO `creature`(`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`,
 (@CREATURE_INSTANCE_TWILIGHT + 74, 47003, 547, 1, 1, 0, 0, -92.0455, -170.409, -2.8993, 2.13391, 300, 0, 0, 1967, 0, 0, 0, 0, 0),
 (@CREATURE_INSTANCE_TWILIGHT + 75, 47003, 547, 1, 1, 0, 0, -95.7992, -170.343, -2.85452, 2.0004, 300, 0, 0, 1967, 0, 0, 0, 0, 0);
 
+-- Spawn Position Mods
+-- Shadow Evils are now walking arround
+UPDATE `creature` SET `MovementType` = 1 WHERE `id` = @TRASH_START+3;
+UPDATE `creature` SET `spawndist` = 7 WHERE `id` =@TRASH_START+3;
+
+-- First twilight twin walks arround now
+UPDATE `creature` SET `MovementType` = 1 WHERE `id` = @BOSS_START+05;
+UPDATE `creature` SET `spawndist` = 20 WHERE `id` = @BOSS_START+05;
+
 
