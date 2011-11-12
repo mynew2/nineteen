@@ -5,9 +5,18 @@
 --	https://github.com/Naios/nineteen	 --		
 --	------------------------------------ --
 
+
+-- REPLACE INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `faction`, `flags`, `size`, `questItem1`, `questItem2`, `questItem3`, `questItem4`, `questItem5`, `questItem6`, `data0`, `data1`, `data2`, `data3`, `data4`, `data5`, `data6`, `data7`, `data8`, `data9`, `data10`, `data11`, `data12`, `data13`, `data14`, `data15`, `data16`, `data17`, `data18`, `data19`, `data20`, `data21`, `data22`, `data23`, `AIName`, `ScriptName`, `WDBVerified`)
+-- VALUES (@CUSTOM_GOB_START+1, 11, 8196, 'nIneTeen Island Teleporter', '', '', '', 0, 0, 1.23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', '', 1);
+INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `faction`, `size`, `data0`)
+VALUES (@CUSTOM_GOB_START+1, 22, '8196', 'nIneTeen Island Teleporter', '35', '1.23', '33055');
+
+DELETE FROM `spell_target_position` WHERE (`id`='33055');
+REPLACE INTO `spell_target_position` VALUES ('33055', '0', '1', '1', '11', '1');
+
 -- Instance Portal in front of the Dunegon Informer
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES
-(@OBJ_GUID_START, 193609, 1, 1, 1, -11390.3, -4754.64, 6.37584, 3.45102, 0, 0, 0.988056, -0.154098, 300, 0, 1),
+(@OBJ_GUID_START, @CUSTOM_GOB_START+1, 1, 1, 1, -11390.3, -4754.64, 6.37584, 3.45102, 0, 0, 0.988056, -0.154098, 300, 0, 1),
 
 -- Elevator in the Inn
 (@OBJ_GUID_START+1, 152614, 1, 1, 1, -11341.6, -4760.06, 19.4877, 2.1292, 0, 0, 0.874596, 0.484853, 300, 0, 1),

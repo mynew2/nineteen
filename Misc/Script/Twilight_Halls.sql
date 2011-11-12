@@ -130,5 +130,7 @@ UPDATE `creature` SET `spawndist` = 7 WHERE `id` =@TRASH_START+3;
 -- First twilight twin walks arround now
 UPDATE `creature` SET `MovementType` = 1 WHERE `id` = @BOSS_START+05;
 UPDATE `creature` SET `spawndist` = 20 WHERE `id` = @BOSS_START+05;
-
+-- second too
+UPDATE `creature` SET `MovementType` = 1 WHERE `id` = @BOSS_START+06;
+UPDATE `creature` SET `spawndist` = 40 WHERE `id` = @BOSS_START+06;
 

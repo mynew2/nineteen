@@ -39,4 +39,8 @@ DELETE FROM creature WHERE id >= @NPC_START;
 -- Creature Template Addon
 DELETE FROM creature_template_addon WHERE entry >= @NPC_START;
 
+-- Items
 DELETE FROM item_template WHERE entry >= 60000;
+
+-- Gameobject Template
+DELETE FROM `gameobject_template` WHERE entry >= @CUSTOM_GOB_START;
