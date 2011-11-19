@@ -38,4 +38,19 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 DELETE FROM game_tele WHERE name = 'start';
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1429, -11385.1, -4712.14, 6.66075, 4.63462, 1, 'start');
 
+-- Lifebinders Way
+DELETE FROM game_tele WHERE name = 'd3';
+DELETE FROM game_tele WHERE name = 'd31';
+DELETE FROM game_tele WHERE name = 'd32';
+DELETE FROM game_tele WHERE name = 'd33';
+DELETE FROM game_tele WHERE name = 'd34';
+DELETE FROM game_tele WHERE name = 'd35';
+
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1440, -11.629, -4.95002, -131.381, 3.56615, 349, 'd35');
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1439, 61.1491, -319.932, -108.678, 1.54217, 349, 'd34');
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1438, 339.882, -414.161, -124.867, 2.20975, 349, 'd32');
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1437, 112.836, -160.841, -167.388, 5.17071, 349, 'd31');
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1436, -56.9797, -432.22, -189.262, 2.15566, 349, 'd3');
+
+
 

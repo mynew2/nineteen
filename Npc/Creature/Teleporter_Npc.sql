@@ -178,7 +178,8 @@ INSERT INTO gossip_menu_option (menu_id, id, option_icon, option_text, option_id
 ('45001'+8, 10, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL),
 */
 ('45001'+9, 0, 9, 'Skys Upscent', 1, 1, 0, 0, 0, 0, NULL),
-('45001'+9, 1, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL),
+('45001'+9, 1, 9, 'Lifebinders Way', 1, 1, 0, 0, 0, 0, NULL),
+('45001'+9, 2, 7, 'Back..', 1, 1, '45001', 0, 0, 0, NULL),
 
 ('45001'+10, 0, 2, 'Twilight Hall', 1, 1, 0, 0, 0, 0, NULL),
 ('45001'+10, 1, 9, 'Back..', 1, 1, '45001', 0, 0, 0, NULL);
@@ -319,8 +320,13 @@ INSERT INTO smart_scripts (entryorguid, source_type, id, link, event_type, event
 -- Skys Upscent
 ('45001', 0, 132, 0, 62, 0, 100, 0, '45001'+9, 0, 0, 0, 62, 600, 0, 0, 0, 0, 0, 0, 8, 0, 0, -462.373, -651.565, 28.55, 3.1004, 'Teleporter script -> Skys Upscent'),
 
+-- Lifebinders Way
+('45001', 0, 134, 0, 62, 0, 100, 0, '45001'+9, 1, 0, 0, 62, 349, 0, 0, 0, 0, 0, 0, 8, 0, 0, -56.9797, -432.22, -189.262, 2.15566, 'Teleporter script -> Lifebinders Way'),
+ 
 -- Twilight Halls
 ('45001', 0, 133, 0, 62, 0, 100, 0, '45001'+10, 0, 0, 0, 62, 547, 0, 0, 0, 0, 0, 0, 8, 0, 0, 119.338, -104.815, -1.59054, 2.62243, 'Teleporter script -> Twilight Hall');
+
+-- Lifebinders Way
 
 -- Creature Addon...
 INSERT INTO `creature_template_addon` (`entry`, `path_id`, `mount`, `bytes1`, `bytes2`, `emote`, `auras`)
