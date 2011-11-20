@@ -12,7 +12,7 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `factio
 VALUES (@CUSTOM_GOB_START+1, 22, '8196', 'nIneTeen Island Teleporter', '35', '1.23', '33055');
 
 DELETE FROM `spell_target_position` WHERE (`id`='33055');
-REPLACE INTO `spell_target_position` VALUES ('33055', '0', '1', '1', '11', '1');
+REPLACE INTO `spell_target_position` VALUES ('33055', 0, -13280.6, 124.401, 25.8556, 1.07559);
 
 -- Instance Portal in front of the Dunegon Informer
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES

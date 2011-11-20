@@ -8,8 +8,8 @@
 -- GM Teleport Locations
 
 -- Mall in Tanaris (Season 1)
-DELETE FROM game_tele WHERE name = 'p1';
-INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1426, -11371.1, -4736.76, 5.01199, 3.47224, 1, 'p1');
+DELETE FROM game_tele WHERE name = 'meet';
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1426, -11371.1, -4736.76, 5.01199, 3.47224, 1, 'meet');
 
 -- Dungeon Twilight Halls
 DELETE FROM game_tele WHERE name = 'd1';
@@ -52,5 +52,9 @@ INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orient
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1437, 112.836, -160.841, -167.388, 5.17071, 349, 'd31');
 INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1436, -56.9797, -432.22, -189.262, 2.15566, 349, 'd3');
 
+-- PVP Areas
+-- Arena
+DELETE FROM game_tele WHERE name = 'p1';
+INSERT INTO `game_tele` (`id`, `position_x`, `position_y`, `position_z`, `orientation`, `map`, `name`) VALUES (1441, -13280.6, 124.401, 25.8556, 1.07559, 0, 'p1');
 
 
